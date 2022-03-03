@@ -15,15 +15,33 @@ numpy
 nltk
 
 ## Data
-**Step 1** Run ./data/hierarhical.py to reconstruct the hierarchical structure.
 
-**Step 2** Run ./data/remove_irrelevant.py to remove classes that don't fit in the hierarchical structure.
+Prepare ImageNet-21K images and organize them like:
 
-**Step 3** Prepare images and run ./data/train_test_split_backup.py to obtain instance-wise split.
+```
+--wnid1
+  --image_name1
+  --image_name2
+--wnid2
+  --image_name1
+  --image_name2
+```
 
-./data/train_test_split.py for low-shot
+Preprocess
 
-./data/imagenet21kp.py for ImageNet-21K-P split.
+```
+# step 1: reconstruct the hierarchical structure
+python ./data/hierarhical.py
+
+# step 2: remove classes that don't fit in the hierarchical structure
+python ./data/remove_irrelevant.py
+
+# step 3: instance-wise split
+python ./data/train_test_split_backup.py
+
+# ./data/train_test_split.py for low-shot
+# ./data/imagenet21kp.py for ImageNet-21K-P split
+```
 
 ## Train
 
