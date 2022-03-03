@@ -3,10 +3,15 @@ Exploring Hierarchical Graph Representation for Large-Scale Zero-Shot Image Clas
 
 ## Requirements
 python=3.7.9
+
 pytorch=1.7.1
+
 scipy
+
 scikit-learn
+
 numpy
+
 nltk
 
 ## Data
@@ -17,6 +22,7 @@ nltk
 **Step 3** Prepare images and run ./data/train_test_split_backup.py to obtain instance-wise split.
 
 ./data/train_test_split.py for low-shot
+
 ./data/imagenet21kp.py for ImageNet-21K-P split.
 
 ## Train
