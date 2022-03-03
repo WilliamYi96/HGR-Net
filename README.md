@@ -2,17 +2,12 @@
 Exploring Hierarchical Graph Representation for Large-Scale Zero-Shot Image Classification
 
 ## Requirements
-python=3.7.9
-
-pytorch=1.7.1
-
-scipy
-
-scikit-learn
-
-numpy
-
-nltk
+- python=3.7.9
+- pytorch=1.7.1
+- scipy
+- scikit-learn
+- numpy
+- nltk
 
 ## Data
 
