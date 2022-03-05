@@ -47,19 +47,21 @@ zero-shot classification
 ```
 python main.py --arch RN50 --training_method OM --weights adaptive --training_method OM --sample_strategy topk --lr 3e-7 --w_lr 1e-4 \
 --out_ratio 0.25 --in_ratio 0.5 --data_train train --data_test rest --data_split_train train --data_split_test val --batch_size 256
+
+# replace data_split_train and data_split_test with other split
 ```
 
 low-shot classification
 
 ```
-python main.py --arch RN50 --training_method OM --weights adaptive --training_method OM --sample_strategy topk --lr 1e-6 --w_lr 1e-4
+python main.py --arch RN50 --training_method OM --weights adaptive --training_method OM --sample_strategy topk --lr 1e-6 --w_lr 1e-4 \
 --out_ratio 0.25 --in_ratio 0.5 --data_train train --data_test rest --data_split_train ls_train --data_split_test ls_val --batch_size 256 --k_shots $k_shots --fetch --fetch_path $zsl_model_path
 ```
 
 ## Test
 
 ```
-python main.py --train False --load --load_path $model_path --data_train train --data_test rest --data_split_train train --data_split_test zsl_test
+python main.py --train False --load --load_path $model_path --data_train train --data_test rest --data_split_train train --data_split_test zsl_test --test_batch_size 512
 ```
 
 ## Citation
