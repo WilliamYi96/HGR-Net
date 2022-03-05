@@ -1,6 +1,8 @@
 # HGR-Net
 Exploring Hierarchical Graph Representation for Large-Scale Zero-Shot Image Classification
 
+[paper](https://arxiv.org/abs/2203.01386)
+
 ## Requirements
 - python=3.7.9
 - pytorch=1.7.1
