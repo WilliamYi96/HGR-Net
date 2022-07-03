@@ -65,10 +65,11 @@ python main.py --train False --load --load_path $model_path --data_train train -
 ```
 
 ## Citation
-
+```
   @article{yi2022exploring,
     title={Exploring hierarchical graph representation for large-scale zero-shot image classification},
     author={Yi, Kai and Shen, Xiaoqian and Gou, Yunhao and Elhoseiny, Mohamed},
     journal={ECCV},
     year={2022}
   }
+```
